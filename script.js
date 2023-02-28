@@ -62,5 +62,16 @@ function game()
 }
 
 game()
-console.log(score1)
-console.log(score2)
+
+console.log("Score 1 is " + score1)
+console.log("Score 2 is " + score2)
+if (score1 > score2)
+{
+    console.log("the computer has won")
+}else if (score2 > score1)
+{
+    console.log("the humans")
+}else
+{
+    console.log("remis")
+}
