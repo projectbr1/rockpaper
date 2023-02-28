@@ -3,11 +3,11 @@ function getComputerChoice()
  let array = ["rock", "paper","scissor"]
  return array[Math.floor(Math.random() * 3)]
 }
-getComputerChoice()
 
-let input = "Rock";
-const computerSelection = getComputerChoice();
-const playerSelection = input.toLowerCase()
+
+const input = window.prompt("rock, paper or scissor")
+let computerSelection = getComputerChoice();
+let playerSelection = input.toLowerCase()
 function playRound(playerSelection, computerSelection)
 { 
 
@@ -42,4 +42,17 @@ function playRound(playerSelection, computerSelection)
  
 
 }
-console.log(playRound(playerSelection,computerSelection))
+
+function game()
+{
+    let score1 = 0;
+    let score2 = 0;
+    for(let i = 0; i < 5; i++)
+    {
+        let variable = getComputerChoice()
+        console.log(playRound(playerSelection,variable))
+        
+    
+    }
+}
+game()
